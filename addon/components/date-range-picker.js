@@ -202,8 +202,8 @@ export default Component.extend({
     let end;
 
     if (!isCancel) {
-      start = picker.startDate.format(this.get('serverFormat'));
-      end = picker.endDate.format(this.get('serverFormat'));
+      start = picker.startDate.toDate();
+      end = picker.endDate.toDate();
     }
 
     if (action) {
